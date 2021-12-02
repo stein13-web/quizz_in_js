@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Quizz JS</title>
+        <link rel="stylesheet" href="quizz2.css" />
+        <link rel="stylesheet" href="button.css">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- 
+            1. Créer l'interface, les blocs, les boutons de type 'radio'
+            2. Créer le style
+            3. Récupérer les données à l'événement 'Click'
+            4. Comparer les résultats
+            5. Afficher une phrase en fonction du résultat
+            6. Changer la couleur des blocs et créer des animations
+        -->
+
+		<div class="text">
+			<h1>Quizz de la Death !!</h1>
+			<h1>Quizz de la Death !!</h1>
+		</div>
+		
+
+		<main>
+			
+			<form class="form-quizz">
+				<div class="question-block">
+                
+					<h4>Qui est le Créateur de DEATH STRANDING ?????</h4>
+					<div>
+						<input
+							type="radio"
+							name="q1"
+							id="r1"
+							value="a"
+							checked
+						/>
+						<label for="r1">Charlemagne</label>
+					</div>
+					<div>
+						<input type="radio" name="q1" id="r2" value="b" />
+						<label for="r2">Attila</label>
+					</div>
+					<div>
+						<input type="radio" name="q1" id="r3" value="c" />
+						<label for="r3">Kojima</label>
+					</div>
+					<div>
+						<input type="radio" name="q1" id="r4" value="d" />
+						<label for="r4">Barberousse</label>
+					</div>
+				</div>
+				<div class="question-block">
+					<h4>
+						Quel est votre métier dans le jeu ?????
+					</h4>
+					<div>
+						<input
+							type="radio"
+							name="q2"
+							id="r5"
+							value="a"
+							checked
+						/>
+						<label for="r5">Bucheron</label>
+					</div>
+					<div>
+						<input type="radio" name="q2" id="r6" value="b" />
+						<label for="r6">Développeur fullstack</label>
+					</div>
+					<div>
+						<input type="radio" name="q2" id="r7" value="c" />
+						<label for="r7">Porteur</label>
+					</div>
+					<div>
+						<input type="radio" name="q2" id="r8" value="d" />
+						<label for="r8">Ingénieur</label>
+					</div>
+				</div>
+
+                <div class="question-block">
+					<h4>
+						Qeuls genre de monstre combattez vous dans le jeux ?????
+					</h4>
+					<div>
+						<input
+							type="radio"
+							name="q3"
+							id="r9"
+							value="a"
+							checked
+						/>
+						<label for="r9">monstre des Mers</label>
+					</div>
+					<div>
+						<input type="radio" name="q3" id="r10" value="b" />
+						<label for="r10">monstre GreenDown</label>
+					</div>
+					<div>
+						<input type="radio" name="q3" id="r11" value="c" />
+						<label for="r11">monstre surnaturels</label>
+					</div>
+					<div>
+						<input type="radio" name="q3" id="r12" value="d" />
+						<label for="r12">monstre des prairies</label>
+					</div>
+				</div>
+				
+				<div id="button" >
+                	<button class="glow-on-hover" type="submit">Validez vos choix !</button>
+				</div>
+			</form>
+
+			<div class="resultats">
+				<h2>Cliquez sur valider pour voir les résultats</h2>
+				<p class="aide"></p>
+				<p class="note"></p>
+			</div>
+		</main>
+		<script src="quizz.js" defer></script>
+	</body>
+</html>
